@@ -8,3 +8,16 @@
 
 - create:
     - ~/Developer/Personal
+
+- shell:
+    # - command: ./scripts/setup_starship.sh
+    #   stdout: true
+    #   description: Install starship
+
+    # - command: ./scripts/setup_brew.sh
+    #   stdout: true
+    #   description: Install brew and applications
+
+    - command: ./scripts/setup_oh_my_zsh.sh
+      stdout: true
+      description: Install oh-my-zsh
