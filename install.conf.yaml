@@ -5,6 +5,8 @@
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
     ~/.gitconfig: gitconfig
+    ~/antigen.zsh: antigen
+    ~/.antigenrc: antigenrc
 
 - create:
     - ~/Developer/Personal
