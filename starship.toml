@@ -1,0 +1,23 @@
+[battery]
+full_symbol = "🔋"
+charging_symbol = "🔌"
+discharging_symbol = "⚡️"
+
+[[battery.display]]
+threshold = 30
+
+[character]
+success_symbol = "[»](bold green) "
+error_symbol = "[»](bold red) "
+
+[aws]
+disabled = true
+
+[cmd_duration]
+format = " :hourglass:️ [$duration]($style)"
+show_notifications = true
+min_time_to_notify = 120_000
+
+[hostname]
+ssh_only = false
+format = " "
