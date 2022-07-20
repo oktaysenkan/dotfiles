@@ -14,7 +14,7 @@ error_symbol = "[»](bold red) "
 disabled = true
 
 [cmd_duration]
-format = " :hourglass:️ [$duration]($style)"
+format = "⌛️ [$duration]($style)"
 show_notifications = true
 min_time_to_notify = 120_000
 
