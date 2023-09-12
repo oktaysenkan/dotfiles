@@ -3,7 +3,9 @@
 - link:
     ~/.profile: profile
     ~/.zprofile: zprofile
-    ~/.zshrc: zshrc
+    ~/.zshrc:
+      force: true
+      path: zshrc
     ~/.gitconfig: gitconfig
     ~/antigen.zsh: antigen
     ~/.antigenrc: antigenrc
@@ -11,16 +13,19 @@
 
 - create:
     - ~/Developer/Personal
+    - ~/.config
 
 - shell:
-    - command: ./scripts/setup_starship.sh
-      stdout: true
-      description: Install starship
-
     - command: ./scripts/setup_brew.sh
       stdout: true
+      stderr: true
+      stdin: true
       description: Install brew and applications
 
     - command: ./scripts/setup_oh_my_zsh.sh
       stdout: true
       description: Install oh-my-zsh
+
+    - command: ./scripts/setup_node.sh
+      stdout: true
+      description: Install Node.js
