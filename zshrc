@@ -2,6 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 source $HOME/antigen.zsh
+source $HOME/aliases
 
 antigen init $HOME/.antigenrc
 

@@ -1,0 +1,7 @@
+function motogp() {
+    if gp | grep -q "Enumerating"; then
+        afplay "$HOME/dotfiles/assets/motogp.mp3"
+    fi
+}
+
+alias mgp=motogp

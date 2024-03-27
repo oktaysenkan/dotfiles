@@ -10,6 +10,7 @@
     ~/antigen.zsh: antigen
     ~/.antigenrc: antigenrc
     ~/.config/starship.toml: starship.toml
+    ~/aliases: aliases
 
 - create:
     - ~/Developer/Personal
