@@ -1,5 +1,5 @@
 function motogp() {
-    if gp | grep -q "Enumerating"; then
+    if gp; then
         afplay "$HOME/dotfiles/assets/motogp.mp3"
     fi
 }
