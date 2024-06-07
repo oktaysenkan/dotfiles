@@ -13,4 +13,4 @@ fi
 
 echo "Brewfile installing"
 
-/opt/homebrew/bin/brew bundle
+$BREW_PATH bundle
