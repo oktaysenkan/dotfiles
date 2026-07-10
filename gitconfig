@@ -2,4 +2,7 @@
 	name = Oktay Şenkan
 	email = oktay.senkan@gmail.com
 [core]
-	editor = code -w
+	editor = zed -w
+	excludesfile = ~/.gitignore_global
+[push]
+	autoSetupRemote = true
