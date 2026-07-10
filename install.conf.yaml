@@ -7,9 +7,17 @@
       force: true
       path: zshrc
     ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore_global
     ~/antigen.zsh: antigen
     ~/.antigenrc: antigenrc
     ~/.config/starship.toml: starship.toml
+    ~/.config/zed/:
+      glob: true
+      path: zed/*
+      create: true
+    "~/Library/Application Support/Cursor/User/settings.json":
+      path: cursor/settings.json
+      force: true
 
 - create:
     - ~/Developer/Personal
@@ -29,3 +37,23 @@
     - command: ./scripts/setup_node.sh
       stdout: true
       description: Install Node.js
+
+    - command: ./scripts/setup_macos.sh
+      stdout: true
+      stderr: true
+      description: Apply macOS settings
+
+    - command: ./scripts/setup_finder_sidebar.sh
+      stdout: true
+      stderr: true
+      description: Add folders to Finder sidebar favorites
+
+    - command: ./scripts/setup_iterm2.sh
+      stdout: true
+      stderr: true
+      description: Point iTerm2 to dotfiles settings folder
+
+    - command: ./scripts/setup_cursor.sh
+      stdout: true
+      stderr: true
+      description: Install Cursor extensions
