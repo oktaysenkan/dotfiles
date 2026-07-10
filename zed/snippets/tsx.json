@@ -1,0 +1,73 @@
+{
+  "console.log": {
+    "prefix": "cl",
+    "body": ["console.log($1)$0"],
+    "description": "console.log"
+  },
+  "React arrow function component": {
+    "prefix": "rafce",
+    "body": [
+      "const ${1:Component} = () => {",
+      "  return (",
+      "    <div>$0</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:Component}"
+    ],
+    "description": "React arrow function component with export"
+  },
+  "React Native functional component": {
+    "prefix": "rnfc",
+    "body": [
+      "import { StyleSheet, Text, View } from 'react-native'",
+      "",
+      "const ${1:Component} = () => {",
+      "  return (",
+      "    <View style={styles.container}>",
+      "      <Text>$0</Text>",
+      "    </View>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:Component}",
+      "",
+      "const styles = StyleSheet.create({",
+      "  container: {",
+      "    flex: 1,",
+      "  },",
+      "})"
+    ],
+    "description": "React Native functional component with StyleSheet"
+  },
+  "useState": {
+    "prefix": "us",
+    "body": ["const [${1:state}, set${2:State}] = useState(${3:initial})$0"],
+    "description": "React useState hook"
+  },
+  "useEffect": {
+    "prefix": "ue",
+    "body": ["useEffect(() => {", "  $0", "}, [${1:}])"],
+    "description": "React useEffect hook"
+  },
+  "useCallback": {
+    "prefix": "ucb",
+    "body": ["const ${1:fn} = useCallback(() => {", "  $0", "}, [${2:}])"],
+    "description": "React useCallback hook"
+  },
+  "useMemo": {
+    "prefix": "umo",
+    "body": ["const ${1:value} = useMemo(() => ${2:computeValue}, [${3:}])$0"],
+    "description": "React useMemo hook"
+  },
+  "useRef": {
+    "prefix": "ur",
+    "body": ["const ${1:ref} = useRef${2:<${3:HTMLDivElement}>}(${4:null})$0"],
+    "description": "React useRef hook"
+  },
+  "useContext": {
+    "prefix": "uctx",
+    "body": ["const ${1:value} = useContext(${2:Context})$0"],
+    "description": "React useContext hook"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "console.log": {
+    "prefix": "cl",
+    "body": ["console.log($1)$0"],
+    "description": "console.log"
+  },
+  "Interface": {
+    "prefix": "int",
+    "body": ["interface ${1:Name} {", "  $0", "}"],
+    "description": "TypeScript interface"
+  },
+  "Type alias": {
+    "prefix": "typ",
+    "body": ["type ${1:Name} = $0"],
+    "description": "TypeScript type alias"
+  },
+  "Enum": {
+    "prefix": "enm",
+    "body": ["enum ${1:Name} {", "  $0", "}"],
+    "description": "TypeScript enum"
+  },
+  "Async arrow function": {
+    "prefix": "afn",
+    "body": ["const ${1:name} = async (${2:args}): Promise<${3:void}> => {", "  $0", "}"],
+    "description": "Async arrow function"
+  },
+  "Try/catch": {
+    "prefix": "try",
+    "body": ["try {", "  $1", "} catch (error) {", "  $0", "}"],
+    "description": "try/catch block"
+  }
+}
