@@ -1,0 +1,14 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-.": "editor::ToggleCodeActions",
+      "alt-escape": "editor::ShowCompletions"
+    }
+  },
+  {
+    "bindings": {
+      "f1": "command_palette::Toggle"
+    }
+  }
+]
