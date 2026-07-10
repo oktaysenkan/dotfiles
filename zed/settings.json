@@ -28,6 +28,9 @@
   "project_panel": {
     "dock": "left"
   },
+  "git_panel": {
+    "dock": "left"
+  },
   "minimap": {
     "show": "never"
   },
