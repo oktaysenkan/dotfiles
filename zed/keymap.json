@@ -8,7 +8,8 @@
   },
   {
     "bindings": {
-      "f1": "command_palette::Toggle"
+      "f1": "command_palette::Toggle",
+      "cmd-alt-c": ["task::Spawn", { "task_name": "Claude Code" }],
     }
   }
 ]
