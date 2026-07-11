@@ -11,6 +11,7 @@
     ~/antigen.zsh: antigen
     ~/.antigenrc: antigenrc
     ~/.config/starship.toml: starship.toml
+    ~/.hammerspoon/init.lua: hammerspoon/init.lua
     ~/.config/zed/:
       glob: true
       path: zed/*
